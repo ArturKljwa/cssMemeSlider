@@ -1,0 +1,83 @@
+ html {
+     font-size: 10px;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: rgb(212, 210, 210);
+ }
+
+ .title {
+     font-size: 30px;
+     color: #000;
+     text-align: center;
+ }
+
+
+ .wrapper {
+     padding: 3rem;
+     max-width: 124rem;
+     margin: 0 auto;
+ }
+
+ .slider__wrapper {
+     max-width: 96rem;
+     margin: 0 auto;
+     overflow: hidden;
+ }
+
+ .slider {
+     display: flex;
+     transition: all 1s ease-in-out;
+     max-height: 60rem;
+
+ }
+
+ .slider__item {}
+
+ .slider__item_img {
+     width: 96rem;
+     height: 50rem;
+ }
+
+ #slide1:checked~.slider__wrapper {
+     transform: translateX(0px);
+ }
+
+
+ #slide2:checked~.slider__wrapper>.slider {
+     transform: translateX(-960px);
+ }
+
+ #slide3:checked~.slider__wrapper>.slider {
+     transform: translateX(-1920px);
+ }
+
+ #slide4:checked~.slider__wrapper>.slider {
+     transform: translateX(-2880px);
+ }
+
+ p {
+     font-size: 2rem;
+ }
+
+
+ .slider__button {
+     display: flex;
+     column-gap: 10px;
+     justify-content: right;
+ }
+
+ .button {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border: 1px solid #000;
+     background-color: blue;
+     cursor: pointer;
+ }
+
+ .button:hover {
+     background-color: rgb(250, 71, 6);
+ }
