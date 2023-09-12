@@ -59,6 +59,7 @@
 
  p {
      font-size: 2rem;
+
  }
 
 
@@ -74,12 +75,29 @@
      height: 20px;
      border-radius: 50%;
      border: 1px solid #000;
-     background-color: blue;
+     background-color: rgb(0, 0, 8);
      cursor: pointer;
  }
 
  .button:hover {
-     background-color: rgb(250, 71, 6);
+     background-color: rgb(250, 6, 6);
  }
 
- ;
+ input {
+     display: none;
+ }
+
+ label:focus {
+     background-color: green;
+ }
+
+ .button:active {
+     background-color: green;
+ }
+
+ #slide1:checked~.slider__wrapper>.slider__button>label>.button__slide_1,
+ #slide2:checked~.slider__wrapper>.slider__button>label>.button__slide_2,
+ #slide3:checked~.slider__wrapper>.slider__button>label>.button__slide_3,
+ #slide4:checked~.slider__wrapper>.slider__button>label>.button__slide_4 {
+     background-color: transparent;
+ }
