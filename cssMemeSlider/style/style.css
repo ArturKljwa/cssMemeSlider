@@ -10,7 +10,7 @@ body {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 3rem;
     color: #000;
     text-align: center;
 }
@@ -67,14 +67,15 @@ p {
 
 .slider__button {
     display: flex;
-    column-gap: 10px;
+    column-gap: 1rem;
     justify-content: right;
 }
 
 .button {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
     border-radius: 50%;
     border: 1px solid #000;
     background-color: rgb(0, 0, 8);
