@@ -72,10 +72,11 @@ p {
 }
 
 .button {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
     height: 2rem;
-    padding: 1rem;
     border-radius: 50%;
     border: 1px solid #000;
     background-color: rgb(0, 0, 8);
@@ -128,4 +129,12 @@ label:focus {
     html {
         font-size: 3px;
     }
+}
+
+.sub_button {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #000;
 }
